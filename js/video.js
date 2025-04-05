@@ -6,6 +6,7 @@ window.addEventListener("load", function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+	// Initialize Variables
     const video = document.getElementById('player1');
     const playButton = document.getElementById('play');
     const pauseButton = document.getElementById('pause');
