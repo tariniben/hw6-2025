@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 1. Page Load
     video.autoplay = false;
     video.loop = false;
-    volumeDisplay.textContent = 'Volume is:'; // Changed here
+    volumeDisplay.textContent = '';
 
   
     // 2. Play Button
@@ -82,9 +82,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Volume Settings
     function updateVolumeDisplay() {
       if (video.muted) {
-        //Do Nothing when muted.
+
       } else {
-        volumeDisplay.textContent = 'Volume is: ' + Math.round(video.volume * 100) + '%'; // Changed here
+        volumeDisplay.textContent = Math.round(video.volume * 100) + '%';
       }
     }
   
